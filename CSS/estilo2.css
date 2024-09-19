@@ -1,0 +1,55 @@
+.contenedor 
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap:10px; /*separacion entre cajas*/
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                        "section section ads"
+                        "footer footer fotter";
+}
+.contenedor .header 
+{
+    background-color: bisque;
+    grid-column: header ;
+
+}
+.contenedor .nav
+{
+    background-color: yellow;
+    grid-column: nav;
+}
+.contenedor .section1
+{
+    background-color: azure;
+    grid-column: 1fr 2fr 1fr;
+}
+.contenedor .section2
+{
+    background-color: rgb(33, 148, 148);
+    grid-column: 2/3;
+}
+.publi1
+{
+ background-color: aquamarine;
+}
+.publi2
+{
+    background-color: rgb(235, 177, 177);
+}
+.contenedor .ads
+{
+    background-color: chartreuse;
+    grid-column: ads;
+}
+.contenedor .footer
+{
+    background-color: brown;
+    grid-column: footer;
+}
